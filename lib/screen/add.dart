@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-
-class TodoForm {
-  String subject;
-}
+import 'package:flutter_assignment_02/models/todo.dart';
 
 class AddTodo extends StatefulWidget {
   @override
@@ -13,10 +10,20 @@ class _AddTodoState extends State<AddTodo> {
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
+  TodoProvider _db;
+
+  _AddTodoState() {
+    _db = TodoProvider();
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _db.open().then((result) {});
+  }
+
   @override
   Widget build(BuildContext context) {
-    TodoForm todoForm = TodoForm();
-
     TextEditingController subjectController = TextEditingController();
 
     TextFormField todoTextField = TextFormField(
@@ -29,15 +36,16 @@ class _AddTodoState extends State<AddTodo> {
           return 'Please enter some text';
         }
       },
-      onSaved: (value) => todoForm.subject = value,
     );
 
     RaisedButton submitButton = RaisedButton(
       child: const Text('Save'),
       onPressed: () {
         if (_formKey.currentState.validate()) {
-          _scaffoldKey.currentState
-              .showSnackBar(SnackBar(content: Text('Processing Data')));
+          Todo todo = Todo(subject: subjectController.text);
+          _db.insert(todo).then((r) {
+            Navigator.pushReplacementNamed(context, '/');
+          });
         }
       },
     );
