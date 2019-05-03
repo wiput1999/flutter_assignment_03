@@ -1,16 +1,38 @@
-# flutter_assignment_02
+# Flutter Assignment #3
+This repository contains code of 2nd Flutter assignment for the Mobile Device Programming class, Faculty of Information Technology, King Mongkut's Institute of Technology Ladkrabang.
 
-A new Flutter project.
+Repository by Wiput Pootong.
 
-## Getting Started
+## Tools
+### Flutter
+<img width="70%" src="https://www.rootjunky.com/wp-content/uploads/2018/09/flutter-banner.jpg">
 
-This project is a starting point for a Flutter application.
+Visit [flutter.io](https://flutter.io/) for more information on Flutter.
 
-A few resources to get you started if this is your first Flutter project:
+### Dart Programming Language
+<img width="70%" src="https://www.dartlang.org/assets/shared/dart-logo-for-shares.png?2">
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+Visit [dartlang.org](https://www.dartlang.org/) for more information on Dart Programming Language.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Visual Studio Code
+<img width="70%" src="https://4.bp.blogspot.com/-eKrR2PQa8NU/WuFILpzwHfI/AAAAAAAANmk/Fcli9c2owAE1xhQCVB0t6l36kP-o5NO6gCLcBGAs/s1600/vscode.pn">
+
+Visit [code.visualstudio.com](https://code.visualstudio.com/) for more information on Visual Studio Code.
+
+### Android Studios
+<img width="70%" src="https://cdn-images-1.medium.com/max/1200/1*tqDq5lnjXt_bLLAUxnjDbw.png">
+
+Visit [developer.android.com/studio](https://developer.android.com/studio/) for more information on Android Studios.
+
+### Xcode
+<img width="35%" src="https://is5-ssl.mzstatic.com/image/thumb/Purple118/v4/a6/0f/6b/a60f6b7e-82f4-f639-ddce-b311cec1924e/Xcode-0-85-220-0-0-0-0-4-0-0-0-2x-sRGB-0-0-0.png/1200x630bb.png">
+
+Visit [developer.apple.com/xcode](https://developer.apple.com/xcode/) for more information on Xcode.
+
+-----
+
+[![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+
+Readme Credit :  Teerapat Kraisrisirikul @810Teams

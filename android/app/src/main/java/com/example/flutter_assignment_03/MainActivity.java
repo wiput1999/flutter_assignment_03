@@ -1,4 +1,4 @@
-package com.example.flutter_assignment_02;
+package com.example.flutter_assignment_03;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
