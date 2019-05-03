@@ -1,6 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment_03/models/todo.dart';
 import 'package:flutter_assignment_03/screen/completed.dart';
 import 'package:flutter_assignment_03/screen/todolist.dart';
 import 'package:flutter_assignment_03/utils/firestore_utils.dart';
@@ -25,7 +23,7 @@ class _TodoListState extends State<TodoList> {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.pushNamed(context, 'AddTaskPage');
+              Navigator.pushNamed(context, '/add');
             },
           ),
         ],

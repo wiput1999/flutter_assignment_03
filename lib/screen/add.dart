@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignment_03/models/todo.dart';
 import 'package:flutter_assignment_03/utils/firestore_utils.dart';
 
 class AddTodo extends StatefulWidget {
@@ -10,18 +9,6 @@ class AddTodo extends StatefulWidget {
 class _AddTodoState extends State<AddTodo> {
   final _formKey = GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
-
-  TodoProvider _db;
-
-  _AddTodoState() {
-    _db = TodoProvider();
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    _db.open().then((result) {});
-  }
 
   @override
   Widget build(BuildContext context) {
