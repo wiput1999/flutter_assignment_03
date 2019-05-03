@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_assignment_03/models/todo.dart';
+import 'package:flutter_assignment_03/utils/firestore_utils.dart';
 
 class AddTodo extends StatefulWidget {
   @override
@@ -42,10 +43,8 @@ class _AddTodoState extends State<AddTodo> {
       child: const Text('Save'),
       onPressed: () {
         if (_formKey.currentState.validate()) {
-          Todo todo = Todo(subject: subjectController.text);
-          _db.insert(todo).then((r) {
-            Navigator.pushReplacementNamed(context, '/');
-          });
+          FirestoreUtils.addTask(subjectController.text.trim());
+          Navigator.pushReplacementNamed(context, '/');
         }
       },
     );
